@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGP - Soluções em Gestão Público</title>
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="stylesheet" href="nossos-professores.css" />
+</head>
+<body>
+    <div id="app" class="main">
+        <div class="content">
+            <div class="bluredBall"></div>
+            <div class="headerContent">
+                <h1>Conheça nossos professores</h1>
+                <hr />
+                <p>Conheça nosso corpo docente formado por mestres, doutores e PhDs, qualificados para atender a área pública e privada.</p>
+            </div>
+        </div>
+
+        <div id="professoresSection" class="pageSize">
+            <div class="mainContentForm" id="professores">
+                <div class="introduction">
+                    <div class="left">
+                        <h2>Nossos Professores</h2>
+                        <span>Professores qualificados que transferem conhecimento e experiências.</span>
+                    </div>
+                    <div class="right">
+                        <input placeholder="Pesquisar professores" type="text">
+                    </div>
+                </div>
+                <div class="professoresTodos" id="professoresTodos">
+                    <!-- Professors will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <svg id="back" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"></path>
+                </svg>
+                <p id="modalTitle">Voltar ao início</p>
+            </div>
+            <div class="modal-body">
+                <h2 id="professorName"></h2>
+                <p id="professorDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function fetchProfessores() {
+            try {
+                const res = await fetch('http://localhost:8080/https://www.sgpsolucoes.com.br/crm/api/?action=1&model=professores');
+                const data = await res.json();
+                console.log(data);
+                return data;
+            } catch (error) {
+                console.error('Error fetching professores:', error);
+                return { errors: ['Error fetching professores'] };
+            }
+        }
+
+        function renderProfessores(profsAll) {
+            const professoresSection = document.getElementById('professoresTodos');
+
+            if (profsAll && professoresSection) {
+                professoresSection.innerHTML = '';
+
+                profsAll.forEach((professor) => {
+                    const professorDiv = document.createElement('div');
+                    professorDiv.classList.add('professor');
+
+                    professorDiv.innerHTML = `
+                        <img src="${professor.caminhoarquivofotoprofessor}/${professor.nomearquivofoto}" alt="Professor(a) ${professor.nome}" class="imgOnHover">
+                        <div class="informacoes" role="button">
+                            <span class="nomeProfessor">${professor.nome}</span>
+                            <span class="conferiorInfo">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+                                </svg>
+                                Conferir detalhes
+                            </span>
+                        </div>
+                    `;
+
+                    // Event listener for opening modal when a professor is clicked
+                    professorDiv.addEventListener('click', () => openModal(professor));
+
+                    professoresSection.appendChild(professorDiv);
+                });
+            }
+        }
+
+        fetchProfessores().then((data) => {
+            if (data.errors) {
+                console.error(data.errors);
+            } else {
+                renderProfessores(data);
+            }
+        });
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the <span> element that closes the modal
+        var back = document.getElementById("back");
+
+        // When the user clicks on <span> (x), close the modal
+        back.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Update the function to open the modal with the selected professor's details
+        function openModal(professor) {
+            const modal = document.getElementById('myModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const professorName = document.getElementById('professorName');
+            const professorDescription = document.getElementById('professorDescription');
+
+            modalTitle.textContent = 'Voltar ao início';
+            professorName.textContent = professor.nome + ' - Currículo';
+            professorDescription.textContent = professor.qualificacao;
+
+            modal.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
