@@ -26,11 +26,11 @@
                         <span>Professores qualificados que transferem conhecimento e experiências.</span>
                     </div>
                     <div class="right">
-                        <input placeholder="Pesquisar professores" type="text">
+                        <input id="searchProfessores" placeholder="Pesquisar professores" type="text">
                     </div>
                 </div>
                 <div class="professoresTodos" id="professoresTodos">
-                    <!-- Professors will be dynamically added here -->
+                    
                 </div>
             </div>
         </div>
@@ -55,6 +55,21 @@
     </div>
 
     <script>
+        document.querySelector('#searchProfessores').addEventListener('input', filterProfessor);
+        function filterProfessor(){
+            const searchInput = document.querySelector('#searchProfessores');
+            const filter = searchInput.value.toLowerCase();
+            const listItems = document.querySelectorAll('.professor');
+
+            listItems.forEach((item) => {
+                let text = item.textContent;
+                if(text.toLowerCase().includes(filter.toLowerCase())){
+                    item.style.display = '';
+                }else{
+                    item.style.display = 'none'
+                }
+            })
+        }
         async function fetchProfessores() {
             try {
                 const res = await fetch('http://localhost:8080/https://www.sgpsolucoes.com.br/crm/api/?action=1&model=professores');
@@ -138,6 +153,7 @@
 
             modal.style.display = 'block';
         }
+
     </script>
 </body>
 </html>
