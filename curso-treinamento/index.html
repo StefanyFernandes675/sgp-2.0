@@ -76,7 +76,171 @@
       </div>
     </div>
   </section>
+
+  <section class="section-cursos">
+    <div class="container-cursos">
+      <div class="cursos">
+        <h1>Confira nossos cursos</h1>
+        <p class="p-curso-info">Conheça nossos cursos de excelência, que aplicam as boas práticas de mercado.</p>
+      </div>
+      <div class="cursosTodos" id="cursosTodos">
+                    
+      </div>
+    </div>
+  </section>
+
+  <div class="background-image">
+    <img src='img/hr-blue.svg'>
+    <h2>Porque somos a empresa mais indicada em cursos e treinamentos?</h2>
+    
+    <div class="grid-container">
+        <div class="grid-column">
+            <div class="grid-row">Profissionais altamente qualificados</div>
+            <div class="grid-row">Conteúdo programático completo</div>
+            <div class="grid-row">Temas relevantes e atuais</div>
+            <div class="grid-row">Saneamento de todas as dúvidas</div>
+            <div class="grid-row">Aulas expositivas</div>
+            <div class="grid-row">Carga horária adequada</div>
+            <div class="grid-row">Cursos Novos</div>
+        </div>
+        <div class="grid-column">
+            <div class="grid-row">Alto índice de satisfação</div>
+            <div class="grid-row">Conhecimento prático e técnico</div>
+            <div class="grid-row">Material didático de qualidade</div>
+            <div class="grid-row">Adaptações às necessidades específicas</div>
+            <div class="grid-row">Metodologia diferenciada</div>
+            <div class="grid-row">Estudos de casos práticos</div>
+            <div class="grid-row">Reconhecimento no mercado</div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-treinamentos">
+      <div class="container-treinamentos">
+        <div class="treinamentos">
+          <h1>Confira nossos treinamentos</h1>
+          <p class="p-curso-info">Conheça nossos treinamentos de excelência e gabarito, que aplicam e vivenciam as melhores boas práticas do mercado.</p>
+        </div>
+        <div class="treinamentosTodos" id="treinamentosTodos">
+                      
+        </div>
+      </div>
+    </section>
+
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=656677105752be739f99e6db" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="webflow.js" type="text/javascript"></script>
 </body>
+<script>
+
+  async function getStaticProps() {
+    let errorsCursosTreinamentos = [];
+
+    try {
+      const res = await fetch(
+        `http://localhost:8080/https://www.sgpsolucoes.com.br/crm/api/?action=1&model=temasCursosTreinamentos`
+      );
+      const cursosTreinamentos = await res.json();
+
+      return {
+        props: {
+          cursosTreinamentos,
+          errorsCursosTreinamentos,
+        },
+        revalidate: 600,
+      };
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      return {
+        props: {
+          cursosTreinamentos: [],
+          errorsCursosTreinamentos: ['Error fetching data'],
+        },
+        revalidate: 600,
+      };
+    }
+  }
+
+  function renderCursos(data) {
+    const coursesAll = data.props.cursosTreinamentos;
+    const courseSection = document.getElementById('cursosTodos');
+
+    if (coursesAll && courseSection) {
+      courseSection.innerHTML = '';
+
+      coursesAll.forEach((curso) => {
+        const cursoDiv = document.createElement('div');
+        cursoDiv.classList.add('curso');
+        
+        if(curso.modalidade == 'C'){
+
+          cursoDiv.innerHTML = `
+                <div class="informacoes" role="button">
+                    <p class='tipo-curso'>Curso</p>
+                    <span class="nomeCurso">${curso.titulocursotreinamento}</span>
+                    <span class="conferiorInfo">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+                        </svg>
+                        Conferir detalhes
+                    </span>
+                </div>
+            `;
+
+            // Event listener for opening modal when a professor is clicked
+            // professorDiv.addEventListener('click', () => openModal(professor));
+
+            courseSection.appendChild(cursoDiv);
+          }
+        });  
+      }
+    }
+
+    getStaticProps().then((data) => {
+      if (data.errors) {
+          console.error(data.errors);
+      } else {
+        renderCursos(data);
+        renderTreinamentos(data);
+      }
+    });
+
+    function renderTreinamentos(data) {
+      const treinamentosAll = data.props.cursosTreinamentos;
+      const treinamentoSection = document.getElementById('treinamentosTodos');
+
+      console.log(treinamentosAll); 
+
+      if (treinamentosAll && treinamentoSection) {
+        treinamentoSection.innerHTML = '';
+
+        treinamentosAll.forEach((treinamento) => {
+        const treinamentoDiv = document.createElement('div');
+        treinamentoDiv.classList.add('treinamento');
+          
+        if(treinamento.modalidade == 'T'){
+
+            treinamentoDiv.innerHTML = `
+                  <div class="informacoes-treinamento" role="button">
+                      <p class='tipo-treinamento'>Treinamento</p>
+                      <span class="nomeTreinamento">${treinamento.titulocursotreinamento}</span>
+                      <span class="conferiorInfo">
+                          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+                          </svg>
+                          Conferir detalhes
+                      </span>
+                  </div>
+              `;
+
+              // Event listener for opening modal when a professor is clicked
+              // professorDiv.addEventListener('click', () => openModal(professor));
+
+              treinamentoSection.appendChild(treinamentoDiv);
+            }
+          });  
+        }
+    }
+
+  </script>
 </html>
