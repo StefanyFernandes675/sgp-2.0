@@ -81,17 +81,18 @@ body {
 
 .main > .pageSize > .mainContentForm > p {
     text-align: center;
-    color: $dark-blue-100;
     margin-block: 20px;
 }
 
 .main > .pageSize > .mainContentForm > .introduction {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .main > .pageSize > .mainContentForm > .introduction .left {
-    width: 60%;
+    flex: 1;
+    padding-right: 20px;
 }
 
 .main > .pageSize > .mainContentForm > .introduction .left > h2 {
@@ -106,8 +107,8 @@ body {
 }
 
 .main > .pageSize > .mainContentForm > .introduction .right {
-    position: relative;
-    width: 30%;
+    flex-shrink: 0;
+    width: auto;
 }
 
 .main > .pageSize > .mainContentForm > .professoresTodos {
@@ -146,19 +147,42 @@ body {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    background-color: #011226;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 40%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+#back{
+    cursor: pointer;
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #011226;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+  .div-vermais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .div-vermais p {
+    color: #032752;
+    font-size: 16px;
+  }
+
+  #verMaisProfessoresButton, #verMenosProfessoresButton{
+    background-color: #FFFFFF;
+    border: none;
+    color: #032752;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
   }
   
   /* Add Animation */
@@ -210,7 +234,6 @@ body {
   .modal-body p{
     color: #FFFFFF;
   }
-
 
 /* Media Queries */
 @media (max-width: 1145px) {
@@ -446,5 +469,29 @@ body {
             color: white;
             font-weight: 300;
         }
+    }
+}
+
+@media (max-width: 1050px) {
+    .main > .pageSize > .mainContentForm > .professoresTodos {
+        grid-template-columns: repeat(2, 48%);
+    }
+}
+
+/* Adicione esta media query para o layout do celular */
+@media (max-width: 511px) {
+    .main > .pageSize > .mainContentForm > .introduction {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main > .pageSize > .mainContentForm > .introduction .left,
+    .main > .pageSize > .mainContentForm > .introduction .right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main > .pageSize > .mainContentForm > .professoresTodos {
+        grid-template-columns: 100%;
     }
 }

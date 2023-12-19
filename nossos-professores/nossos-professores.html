@@ -6,6 +6,11 @@
     <title>SGP - Soluções em Gestão Público</title>
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
     <link rel="stylesheet" href="nossos-professores.css" />
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div id="app" class="main">
@@ -30,11 +35,15 @@
                     </div>
                 </div>
                 <div class="professoresTodos" id="professoresTodos">
-                    
+
                 </div>
+                <div class="div-vermais">
+                    <p id="lista">Confira a lista completa</p>
+                    <button id="verMaisProfessoresButton">clicando aqui!</button>
+                </div>
+                <button id="verMenosProfessoresButton" class="hide">Ver menos</button>
             </div>
         </div>
-
     </div>
 
     <!-- Modal -->
@@ -56,20 +65,9 @@
 
     <script>
         document.querySelector('#searchProfessores').addEventListener('input', filterProfessor);
-        function filterProfessor(){
-            const searchInput = document.querySelector('#searchProfessores');
-            const filter = searchInput.value.toLowerCase();
-            const listItems = document.querySelectorAll('.professor');
+        document.querySelector('#verMaisProfessoresButton').addEventListener('click', showMoreProfessores);
+        document.querySelector('#verMenosProfessoresButton').addEventListener('click', showLessProfessores);
 
-            listItems.forEach((item) => {
-                let text = item.textContent;
-                if(text.toLowerCase().includes(filter.toLowerCase())){
-                    item.style.display = '';
-                }else{
-                    item.style.display = 'none'
-                }
-            })
-        }
         async function fetchProfessores() {
             try {
                 const res = await fetch('http://localhost:8080/https://www.sgpsolucoes.com.br/crm/api/?action=1&model=professores');
@@ -81,13 +79,15 @@
             }
         }
 
-        function renderProfessores(profsAll) {
+        function renderProfessores(profsAll, limit) {
             const professoresSection = document.getElementById('professoresTodos');
 
             if (profsAll && professoresSection) {
                 professoresSection.innerHTML = '';
 
-                profsAll.forEach((professor) => {
+                for (let i = 0; i < limit; i++) {
+                    const professor = profsAll[i];
+
                     const professorDiv = document.createElement('div');
                     professorDiv.classList.add('professor');
 
@@ -105,26 +105,58 @@
                         </div>
                     `;
 
-                    // Event listener for opening modal when a professor is clicked
                     professorDiv.addEventListener('click', () => openModal(professor));
 
                     professoresSection.appendChild(professorDiv);
-                });
+                }
             }
         }
+
+        let allProfessores; // Armazenar todos os professores
+        let professoresLimit = 6; // Inicialmente exibir 6 professores
 
         fetchProfessores().then((data) => {
             if (data.errors) {
                 console.error(data.errors);
             } else {
-                renderProfessores(data);
+                allProfessores = data; // Armazenar todos os professores
+                renderProfessores(data, professoresLimit);
             }
         });
 
+        async function showMoreProfessores() {
+            professoresLimit = allProfessores.length; // Exibir todos os professores
+            renderProfessores(allProfessores, professoresLimit);
+            document.getElementById('verMenosProfessoresButton').classList.remove('hide');
+            document.getElementById('verMaisProfessoresButton').classList.add('hide');
+            document.getElementById('lista').classList.add('hide');
+        }
+
+        function showLessProfessores() {
+            professoresLimit = 6; 
+            renderProfessores(allProfessores, professoresLimit);
+            document.getElementById('verMenosProfessoresButton').classList.add('hide');
+            document.getElementById('verMaisProfessoresButton').classList.remove('hide');
+            document.getElementById('lista').classList.remove('hide');
+        }
+
+        function filterProfessor() {
+            const searchInput = document.querySelector('#searchProfessores');
+            const filter = searchInput.value.toLowerCase();
+            const listItems = document.querySelectorAll('.professor');
+
+            listItems.forEach((item) => {
+                let text = item.textContent;
+                if (text.toLowerCase().includes(filter.toLowerCase())) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none'
+                }
+            })
+        }
+
         // Get the modal
         var modal = document.getElementById("myModal");
-
-        // Get the <span> element that closes the modal
         var back = document.getElementById("back");
 
         // When the user clicks on <span> (x), close the modal
