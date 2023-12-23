@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    background-image: url('img/homem-sorrindo.webp');
+    background-position: center;
+    min-width: 100vw;
+    height: 356.8px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.content .bluredBall {
+    position: absolute;
+    height: 60%;
+    width: 20%;
+    top: 0;
+    left: 25%;
+    border-radius: 50%;
+    z-index: 0;
+    background-color: #2676EF;
+    filter: blur(7rem);
+}
+
+.content > .headerContent {
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+.content > .headerContent > h1 {
+    color: white;
+}
+
+.content > .headerContent > hr {
+    width: 15%;
+    height: 3px;
+    background-color: #26b0ef;
+    border: 1px solid #26b0ef;
+    margin: 0;
+}
+
+.content > .headerContent > p {
+    color: white;
+    margin-block: 5px;
+}
+
+.content > .headerContent > button {
+    width: 40%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main > .pageSize {
+    width: 80%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.main > .pageSize > .mainContentForm {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.main > .pageSize > .mainContentForm > p {
+    text-align: center;
+    margin-block: 20px;
+}
+
+.main > .pageSize > .mainContentForm > .introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.main > .pageSize > .mainContentForm > .introduction .left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.main > .pageSize > .mainContentForm > .introduction .left > h2 {
+    font-size: 2rem;
+    color: #032752;
+}
+
+.main > .pageSize > .mainContentForm > .introduction .left > span {
+    color: #5f5c6b;
+    margin-bottom: 2rem;
+    margin-top: 7px;
+}
+
+.main > .pageSize > .mainContentForm > .introduction .right {
+    flex-shrink: 0;
+    width: auto;
+}
+
+/* Add the new styles for the grid layout and curso width */
+#cursoTodos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-around;
+}
+
+#cursoTodos > .curso {
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 250px;
+    position: relative;
+}
+
+#cursoTodos .tipo-curso {
+    background-color: #fc943f;
+    width: 50%;
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#cursoTodos .curso {
+    border: 1px solid #ccc;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 15px;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+    max-width: 300px;
+    width: 100%;
+    background-color: #011226;
+}
+
+#cursoTodos .informacoes .nomeCurso {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#cursoTodos .informacoes .conferiorInfo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 20px;
+    gap: 5px;
+    color: #FFFFFF;
+}
+
+#cursoTodos .informacoes .conferiorInfo svg {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 999999%;
+}
+
+.modalCurso, #modalTreinamento {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    max-height: 80vh;
+}
+
+.modal-header-curso {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    gap: 5px;
+    padding: 10px;
+}
+
+#back {
+    cursor: pointer;
+}
+
+.modal-content-curso {
+    position: relative;
+    background-color: #011226;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+#cursoName {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.modal-content-curso span {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+#cursoGoal,
+#cursoPublicoAlvo {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #011226;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#back {
+    margin-right: 10px;
+    /* Adjust the margin as needed */
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-body h2 {
+    color: #FFFFFF;
+    font-weight: 22px;
+    font-family: IBM Plex Sans, sans-serif, Courier New, Courier, monospace;
+}
+
+.modal-body p {
+    color: #FFFFFF;
+}
+
+/* Media Queries */
+@media (max-width: 1145px) {
+    .content > .headerContent {
+        width: 40%;
+    }
+
+    .main > .pageSize > .mainContentForm {
+        flex-direction: column;
+    }
+
+    #cursoTodos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 861px) {
+    .content > .headerContent {
+        width: 60%;
+    }
+}
+
+@media (max-width: 822px) {
+    .content > .headerContent {
+        width: 90%;
+    }
+    #cursoTodos {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+}
+
+@media (max-width: 610px){
+    .introduction {
+        flex-direction: column;
+        align-items: center;
+    }
+    .introduction .right {
+        margin-top: 20px;
+    }
+}

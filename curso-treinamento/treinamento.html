@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGP - Soluções em Gestão Público</title>
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="stylesheet" href="style-treinamento.css" />
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="main">
+        <div class="content">
+            <div class="bluredBall"></div>
+            <div class="headerContent">
+                <h1>Treinamentos</h1>
+                <hr />
+            </div>
+        </div>
+
+        <div id="cursosSection" class="pageSize">
+            <div class="mainContentForm" id="cursos">
+                <div class="introduction">
+                    <div class="left">
+                        <h2>Confira nossos treinamentos</h2>
+                        <span>Conheça nossos treinamentos de excelência, que aplicam e vivenciam as melhores boas práticas do mercado.</span>
+                    </div>
+                    <div class="right">
+                        <input id="searchCursos" placeholder="Pesquisar curso..." type="text">
+                    </div>
+                </div>
+                <div class="cursoTodos" id="cursoTodos">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div id="modalCurso" class="modalCurso">
+    <div class="modal-content-curso">
+        <div class="modal-header-curso">
+            <svg id="back" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"></path>
+            </svg>
+            <p id="modalTitle">Voltar ao início</p>
+        </div>
+        <div class="modal-body-curso">
+            <p id="cursoName"></p>
+            <span>Objetivo</span>
+            <p id="cursoGoal"></p>
+            <span>Público Alvo</span>
+            <p id="cursoPublicoAlvo"></p>
+        </div>
+    </div>
+  </div>
+
+    <script>
+        document.querySelector('#searchCursos').addEventListener('input', filterCursos);
+
+        async function getStaticProps() {
+            let errorsCursosTreinamentos = [];
+
+        try {
+        const res = await fetch(
+            `http://localhost:8080/https://www.sgpsolucoes.com.br/crm/api/?action=1&model=temasCursosTreinamentos`
+        );
+        const cursosTreinamentos = await res.json();
+
+        return {
+            props: {
+            cursosTreinamentos,
+            errorsCursosTreinamentos,
+            },
+            revalidate: 600,
+        };
+        } catch (error) {
+        console.error('Error fetching data:', error);
+        return {
+            props: {
+            cursosTreinamentos: [],
+            errorsCursosTreinamentos: ['Error fetching data'],
+            },
+            revalidate: 600,
+        };
+        }
+    }
+
+    function renderCursos(data) {
+        const coursesAll = data.props.cursosTreinamentos;
+        const courseSection = document.getElementById('cursoTodos');
+
+        if (coursesAll && courseSection) {
+          courseSection.innerHTML = '';
+
+            for (let i = 0; i < coursesAll.length; i++) {
+            const curso = coursesAll[i];
+
+                if (curso.modalidade === 'T') {
+                const cursoDiv = document.createElement('div');
+                cursoDiv.classList.add('curso');
+
+                    cursoDiv.innerHTML = `
+                    <div class="informacoes" role="button">
+                        <p class='tipo-curso'>Treinamento</p>
+                        <span class="nomeCurso">${curso.titulocursotreinamento}</span>
+                        <span class="conferiorInfo">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+                        </svg>
+                        Conferir detalhes
+                        </span>
+                    </div>
+                    `;
+
+                    cursoDiv.addEventListener('click', () => openModalCurso(curso));
+                    courseSection.appendChild(cursoDiv);
+                }
+            }
+        }
+    }
+
+  getStaticProps().then((data) => {
+    if (data.errors) {
+        console.error(data.errors);
+    } else {
+      renderCursos(data);
+    }
+  });
+
+    function filterCursos() {
+        const searchInput = document.querySelector('#searchCursos');
+        const filter = searchInput.value.toLowerCase();
+        const listItems = document.querySelectorAll('.curso');
+
+        listItems.forEach((item) => {
+            let text = item.textContent;
+            if (text.toLowerCase().includes(filter.toLowerCase())) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none'
+            }
+        })
+    }
+
+    // Get the modal
+    var modalCurso = document.querySelector("#modalCurso");
+    var back = document.querySelector("#back");
+
+    // When the user clicks on <span> (x), close the modal
+    back.onclick = function () {
+      modalCurso.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modalCurso) {
+          modalCurso.style.display = "none";
+        }
+    }
+
+    // Update the function to open the modal with the selected course's details
+    function openModalCurso(curso) {
+        const modal = document.getElementById('modalCurso');
+        const modalTitle = document.getElementById('modalTitle');
+        const courseName = document.getElementById('cursoName');
+        const courseGoal = document.getElementById('cursoGoal');
+        const coursePublico = document.getElementById('cursoPublicoAlvo');
+        modalTitle.textContent = 'Voltar ao início';
+        courseName.textContent = curso.titulocursotreinamento;
+        courseGoal.textContent = curso.objetivo;
+        coursePublico.textContent = curso.publicoalvo;
+        modal.style.display = 'block';
+    }
+
+    </script>
+</body>
+</html>

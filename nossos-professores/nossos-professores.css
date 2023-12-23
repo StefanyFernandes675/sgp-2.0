@@ -478,7 +478,6 @@ body {
     }
 }
 
-/* Adicione esta media query para o layout do celular */
 @media (max-width: 511px) {
     .main > .pageSize > .mainContentForm > .introduction {
         flex-direction: column;
