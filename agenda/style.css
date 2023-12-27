@@ -547,6 +547,11 @@ body{
   text-decoration: none;
 }
 
+.right{
+  flex-shrink: 0;
+  width: auto;
+}
+
 @media screen and (max-width: 991px) {
   .section.publique-seu-artigo {
     grid-column-gap: 28px;

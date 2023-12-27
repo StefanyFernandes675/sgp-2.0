@@ -57,8 +57,7 @@
                     
       </div>
       <div class="div-vermais">
-        <p id="lista">Confira a lista completa</p>
-        <a href="cursosAll.html" id="verMaisCursos">clicando aqui!</a>
+        <a href="index.html" id="verMaisCursos">Ver menos</a>
       </div>
     </div>
   </section>
@@ -130,7 +129,7 @@
     }
   }
 
-  function renderCursos(data, limit) {
+  function renderCursos(data) {
   const coursesAll = data.props.cursosTreinamentos;
   const courseSection = document.getElementById('cursosTodos');
 
@@ -139,7 +138,7 @@
 
       let cursosRenderizados = 0;
 
-      for (let i = 0; i < coursesAll.length && cursosRenderizados < limit; i++) {
+      for (let i = 0; i < coursesAll.length; i++) {
         const curso = coursesAll[i];
 
         const cursoDiv = document.createElement('div');
@@ -173,7 +172,7 @@
               <div class="informacoes" role="button">
                 <div class="info">
                   <p class='tipo-curso'>Curso Presencial</p>
-                  <p class="dataCurso">Data: ${dataProgramada}</p>
+                  <p class="dataCurso">Data: ${dataFormatada}</p>
                 </div>
                 <span class="nomeCurso">${curso.titulocursotreinamento}</span>
                 <span class="conferiorInfo">
@@ -193,7 +192,7 @@
               <div class="informacoes" role="button">
                 <div class="info">
                   <p class='tipo-treinamento'>Treinamento On-line</p>
-                  <p class="dataCurso">Data: ${dataProgramada}</p>
+                  <p class="dataCurso">Data: ${dataFormatada}</p>
                 </div>
                 <span class="nomeCurso">${curso.titulocursotreinamento}</span>
                 <span class="conferiorInfo">
@@ -213,7 +212,7 @@
               <div class="informacoes" role="button">
                 <div class="info">
                   <p class='tipo-treinamento'>Treinamento Presencial</p>
-                  <p class="dataCurso">Data: ${dataProgramada}</p>
+                  <p class="dataCurso">Data: ${dataFormatada}</p>
                 </div>
                 <span class="nomeCurso">${curso.titulocursotreinamento}</span>
                 <span class="conferiorInfo">
@@ -235,13 +234,11 @@
     }
   }
 
-  let cursosLimit = 6;
-
   getStaticProps().then((data) => {
     if (data.errors) {
         console.error(data.errors);
     } else {
-      renderCursos(data, cursosLimit);
+      renderCursos(data);
     }
   });
 
