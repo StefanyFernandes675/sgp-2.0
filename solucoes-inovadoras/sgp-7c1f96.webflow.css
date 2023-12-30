@@ -2829,4 +2829,108 @@
   }
 }
 
+.p-politica {
+  color: #000;
+  margin-bottom: 0;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 16px;
+}
 
+.container.container-politica {
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.heading-politica {
+  color: #fff;
+  margin-top: 50px;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 32px;
+}
+
+.h2-politica {
+  color: #032752;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 24px;
+}
+
+
+.h3-politica {
+  color: #26b0ef;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 18.72px;
+}
+
+.p-politica-low {
+  color: #5f5c6b;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 13px;
+}
+
+.section.is--politica {
+  min-height: auto;
+  min-width: auto;
+  background-color: #011832;
+}
+
+.p-politica.text-center {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+.p-privacidade {
+  color: #33303e;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 0;
+  padding: 7px;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  width: 45%;
+}
+
+.p-privacidade2 {
+  color: #032752;
+  border: 1px solid #000;
+  border-top-color: #032752;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 7px;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  width: 45%;
+}
+
+.grid-politica {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+}
+
+.p-politica-low.is-termo {
+  border-top: 1px solid #757575;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.bold-text-termos{
+  color: #032752;
+  font-weight: bold;
+  text-decoration: none;
+}
