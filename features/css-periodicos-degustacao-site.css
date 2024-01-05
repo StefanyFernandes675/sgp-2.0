@@ -1,0 +1,1985 @@
+.efeito-zoom {
+	overflow: hidden;
+}
+
+.efeito-zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.efeito-zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+
+
+#periodicos-degustacao-pagina { /* inlcuido por Eisen */
+    position: relative;
+}
+
+
+
+
+
+
+
+
+.Button_button__OFOdO {
+    padding: 10px 30px;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    width: auto;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    text-align: center
+}
+
+.Button_button__OFOdO:disabled {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+.Button_buttonColorBlue__J8Eyl {
+    background-color: #26b0ef
+}
+
+.Button_buttonColorOrange__ii9HV {
+    background-color: #fc943f
+}
+
+.Button_buttonColorDarkBlue__YAotb {
+    background-color: #032752
+}
+
+.Button_buttonColorGrey__PP1X4 {
+    background-color: #f2f6fa;
+    color: #4e4b59
+}
+
+.Dropdown_main__C_6_F {
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: right;
+    min-width: 150px;
+    display: inline
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    min-width: 150px
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_menuButton__U9_lU {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-inline:16px;align-items: center;
+    padding-block:8px;font-size: 14px;
+    font-weight: 600;
+    color: #5f5c6b;
+    border: 1px solid #c6c5ce;
+    position: relative
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_menuButton__U9_lU:focus {
+    outline: none;
+    opacity: 1
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_menuButton__U9_lU>.Dropdown_svg__G2lrv {
+    right: 8px;
+    margin-left: 8px;
+    margin-right: -4px;
+    width: 20px;
+    color: #26b0ef
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_enter__8iYPW {
+    transition: .1s ease-out
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_enterFrom__4P78L,.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_enterTo__XtuOv {
+    transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scale(1)
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_enterTo__XtuOv {
+    opacity: 1
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_leave__5CIgA {
+    transition: .07s ease-in
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_leaveFrom__0I3RH {
+    transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scale(1);
+    opacity: 1
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_leaveTo__tRblH {
+    transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scale(.95);
+    opacity: 0
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_menuItems__6jnPK {
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    width: 224px;
+    transform-origin: top right;
+    z-index: 10;
+    border: 1px solid #c6c5ce;
+    background-color: #fff;
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: 1px .2px 2.2px rgba(0,0,0,.001),2.5px .6px 5.3px rgba(0,0,0,.002),4.6px 1.1px 10px rgba(0,0,0,.004),8.3px 2px 17.9px rgba(0,0,0,.007),15.5px 3.8px 33.4px rgba(0,0,0,.012),37px 9px 80px rgba(0,0,0,.07)
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_menuItems__6jnPK:focus {
+    outline: none
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_menuItems__6jnPK>div {
+    padding: 4px
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_menuItems__6jnPK>div>.Dropdown_dropdown___wna9 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 15px;
+    background-color: #fff
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_menuItems__6jnPK>div>.Dropdown_dropdown___wna9:hover {
+    background-color: #f1f0f5
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_menuItems__6jnPK>div>.Dropdown_dropdownSemItems__EPIyy {
+    color: #7a7786;
+    cursor: none
+}
+
+.Dropdown_main__C_6_F .Dropdown_menuAsDiv__F3aDD .Dropdown_menuItems__6jnPK>div>.Dropdown_dropdownSemItems__EPIyy:hover {
+    background-color: green
+}
+
+/*
+.Spinner_spinner__mgqnO {
+    width: 30px;
+    height: 30px;
+    animation: Spinner_spinner__mgqnO .75s linear infinite
+}
+
+.Spinner_spinner__mgqnO span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+.Spinner_spinner__mgqnO .Spinner_spinner-inner-1__KWSma {
+    background: linear-gradient(90deg,rgba(3,39,82,0) 0,rgba(3,39,82,0) 50%,#032752 51%)
+}
+
+.Spinner_spinner__mgqnO .Spinner_spinner-inner-2__HaKpJ {
+    background: linear-gradient(0deg,hsla(0,0%,100%,0) 0,#fff)
+}
+
+.Spinner_spinner__mgqnO .Spinner_spinner-inner-3__hKY5w {
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background: #fff
+}
+
+@keyframes Spinner_spinner__mgqnO {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(1turn)
+    }
+}
+*/
+
+/*
+.FriendlyErrorMessage_errorStructure__ciPcF {
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #c63a3c;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-block:30px}
+
+.FriendlyErrorMessage_errorStructure__ciPcF>legend {
+    padding-inline:10px;color: #c63a3c
+}
+*/
+
+.NossosPeriodicos_headerContent__DbetY {
+    /*excluido Eisen background-image: url("../imagens/periodicos/imagem-periodico-degustacao-banner-cabecalho.webp");*/
+    background-position: 50%;
+    /*excluido Eisen min-width: 100vw; */
+    height: 356.8px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace; /* inserido por Eisen */
+    height: 20%; /* inserido por Eisen */
+}
+
+.NossosPeriodicos_headerContent__DbetY h1 {  /* inserido por Eisen */
+    font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace; /* inserido por Eisen */
+    font-weight: 700; /* inserido por Eisen */
+    font-size: 190%; /* inserido por Eisen */
+    margin-bottom: 0; /* inserido por Eisen */
+}
+
+.NossosPeriodicos_headerContent__DbetY p { /* inserido por Eisen */
+    font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace; /* inserido por Eisen */
+
+}
+
+.NossosPeriodicos_headerContent__DbetY hr {  /* inserido por Eisen */
+    width: 15%;
+    height: 3px;
+    background-color: #26b0ef;
+    border: 1px solid #26b0ef;
+    margin: 0% 0% 0% 0%; /* inserido por Eisen */
+}
+
+
+.NossosPeriodicos_content__HyHPQ { /* inserido por Eisen */
+    background-image: url("../imagens/periodicos-degustacao/imagem-periodico-degustacao-banner-cabecalho.webp");
+    background-position: 50%;
+    min-width: 100vw;
+    height: 356.8px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+
+
+
+
+
+
+.NossosPeriodicos_content__HyHPQ .NossosPeriodicos_bluredBall__4COSk {
+    position: absolute;
+    height: 60%;
+    width: 20%;
+    top: 0;
+    left: 25%;
+    border-radius: 50%;
+    z-index: 0;
+    background-color: #2676ef;
+    filter: blur(7rem)
+}
+
+.NossosPeriodicos_content__HyHPQ>.NossosPeriodicos_headerContent__DbetY {
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+
+    font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace; /* inserido por Eisen */
+}
+
+.NossosPeriodicos_content__HyHPQ>.NossosPeriodicos_headerContent__DbetY>h1 {
+    color: #fff
+}
+/* excluido por Eisen
+.NossosPeriodicos_content__HyHPQ>.NossosPeriodicos_headerContent__DbetY>hr {
+    width: 15%;
+    height: 3px;
+    background-color: #26b0ef;
+    border: 1px solid #26b0ef
+}
+*/
+.NossosPeriodicos_content__HyHPQ>.NossosPeriodicos_headerContent__DbetY>p {
+    color: #fff;
+    margin-block:5px}
+
+.NossosPeriodicos_main__Bz_iv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+
+
+
+
+
+
+
+
+.NossosPeriodicos_pageSize__MLBde { /* inserido por Eisen */
+    width: 80%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 10%; /* inserido por Eisen */
+    margin-right: 10%; /* inserido por Eisen */
+
+    
+
+}
+
+.NossosPeriodicos_periodicos__KPpMy { /* inserido por Eisen */
+    display: grid;
+    grid-template-columns: 23% 72%; /* repeat(2,auto) */
+    grid-gap: 5%;
+    /* gap: 40px; */
+}
+
+
+
+
+.NossosPeriodicos_dropdowns__Ys4TN {  /* inserido por Eisen */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.NossosPeriodicos_left__L6_r8 h2 {  /* inserido por Eisen */
+    color: #032752;
+    padding-bottom: 17%; /* inserido por Eisen 40px */
+    font-size: 150%; /* inserido por Eisen */
+    font-weight: 700; /* inserido por Eisen */
+}
+
+
+.NossosPeriodicos_individual__dw5hE {  /* inserido por Eisen */
+    display: flex;
+    align-items: center;
+    gap: 12%; /* inserido por Eisen 30px */
+}
+
+.NossosPeriodicos_individual__dw5hE span { /* inserido por Eisen */
+    text-align: right;
+    width: 20%;
+}
+
+.NossosPeriodicos_button__PQiiP { /* inserido por Eisen */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-block: 10%; /* inserido por Eisen 40px */ 
+    font-weight: 700; /* inserido por Eisen */
+    /*font-family: IBM Plex Sans;  inserido por Eisen */
+    font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace;  /* inserido por Eisen */
+}
+
+
+
+.Button_button__OFOdO { /* inserido por Eisen */
+    padding: 10px 30px;
+    font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace;  /* inserido por Eisen IBM Plex Sans */
+    font-size: 95%;
+    box-sizing: border-box;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    width: auto;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    text-align: center
+}
+
+
+.NossosPeriodicos_right__sg_lH {  /* inserido por Eisen */
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-content: center;
+    grid-gap: 4%; /* inserido por Eisen 20px */
+    gap: 4%; /* inserido por Eisen 20px */
+}
+
+
+.NossosPeriodicos_slc__273z7 span { /* inserido por Eisen */
+    display: block;
+    text-align: center;
+    padding-block: 80%; /* inserido por Eisen 15px */
+    width: 100%;  /* inserido por Eisen 65% */
+    padding-left: 10%; /* inserido por Eisen */
+    padding-right: 10%; /* inserido por Eisen */
+
+}
+
+.NossosPeriodicos_sam__fvuJT span { /* inserido por Eisen */
+    display: block;
+    text-align: center;
+    padding-block: 80%; /* inserido por Eisen 15px */
+    width: 100%;  /* inserido por Eisen 65% */
+    padding-left: 10%; /* inserido por Eisen */
+    padding-right: 10%; /* inserido por Eisen */
+
+}
+
+.NossosPeriodicos_slc__273z7>span>strong { /* inserido por Eisen */
+    color: #26b0ef
+}
+
+.NossosPeriodicos_sam__fvuJT>span>strong { /* inserido por Eisen */
+    color: #fc943f
+}
+
+
+#NossosPeriodicos_slc__273z7 { /* incluído por Eisen */
+
+    background-image: url("../imagens/periodicos-degustacao/imagem-periodico-degustacao-slc.webp"); /* https://www.sgpsolucoes.com.br/imagens/boletim_licitacoes_132x201.jpg */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%; /* 384px; */
+    height: 292px; /* 292px; */
+    border-radius: 2% 2% 2% 2%;  
+
+    transition: .5s; /* Transição de 500ms para deixar suave para troca de imagem hover - incluido por Eisen*/
+
+ }
+
+ #NossosPeriodicos_slc__273z7:hover{ /* incluído por Eisen */
+    background-image: url("../imagens/periodicos-degustacao/fundo-imagemslc-1005x675.webp");
+}
+
+ .NossosPeriodicos_sam__fvuJT { /* incluído por Eisen */
+
+    background-image: url("../imagens/periodicos-degustacao/imagem-periodico-degustacao-sam.webp"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%; /* 384px; */
+    height: 292px; /* 292px; */
+    border-radius: 2% 2% 2% 2%;  
+
+    transition: .5s; /* Transição de 500ms para deixar suave para troca de imagem hover - incluido por Eisen*/
+
+
+ }
+
+ #NossosPeriodicos_sam__fvuJT:hover{ /* incluído por Eisen */
+    background-image: url("../imagens/periodicos-degustacao/fundo-imagemsam-1005x675.webp");
+}
+
+
+.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 { /* incluído por Eisen */
+    margin-block: 15%; /* 150px; */
+    height: auto;
+    background-color: #032752;
+    border-radius: 16px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+}
+
+
+.NossosPeriodicos_bluredBall__4COSk { /* incluído por Eisen */
+    position: absolute;
+    height: 60%;
+    width: 20%;
+    top: 0;
+    left: 50%;
+    border-radius: 50%;
+    background-color: #2676ef;
+    filter: blur(7rem);
+}
+
+.NossosPeriodicos_descricao__qq1ka { /* incluído por Eisen */
+    width: 50%;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    gap: 40px;
+}
+
+.NossosPeriodicos_descricao__qq1ka h1 { /* incluído por Eisen */
+    font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace;
+    font-weight: 700;
+    font-size: 180%;
+}
+
+.NossosPeriodicos_descricao__qq1ka svg { /* incluído por Eisen */
+    border: 1px solid #fff;
+    border-radius: 5px;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 6px;
+    display: inline-block;
+}
+
+
+.NossosPeriodicos_descricao__qq1ka button { /* incluído por Eisen */
+    width: 60%;
+}
+
+.NossosPeriodicos_descricao__qq1ka div { /* incluído por Eisen */
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.NossosPeriodicos_individual__dw5hE label { /* incluído por Eisen */
+    width: 59%;
+}
+
+
+
+.periodico-degustacao-select {
+    appearance: none !important;
+    background-color: #ffffff !important;
+    color: #384cf8 !important;
+  }
+
+
+
+
+
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde {
+    width: 80%;
+    margin-top: 4rem;
+    margin-bottom: 4rem
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 40px;
+    gap: 40px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_left__L6_r8 h2 {
+    color: #032752;
+    padding-bottom: 40px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_left__L6_r8 .NossosPeriodicos_dropdowns__Ys4TN {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_left__L6_r8 .NossosPeriodicos_dropdowns__Ys4TN>.NossosPeriodicos_individual__dw5hE {
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_left__L6_r8 .NossosPeriodicos_dropdowns__Ys4TN>.NossosPeriodicos_individual__dw5hE span {
+    text-align: right;
+    width: 20%
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_left__L6_r8 .NossosPeriodicos_button__PQiiP {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-block:40px}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy>.NossosPeriodicos_periodicosAllMobile__7fgX0 {
+    width: 100%
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy>.NossosPeriodicos_periodicosAllMobile__7fgX0 h3 {
+    color: #032752;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy>.NossosPeriodicos_periodicosAllMobile__7fgX0>.NossosPeriodicos_periodicosDownload__6Y71E {
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    padding: 15px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy>.NossosPeriodicos_periodicosAllMobile__7fgX0>.NossosPeriodicos_periodicosDownload__6Y71E>.NossosPeriodicos_card___GxOK {
+    background-color: #032752;
+    color: #fff;
+    border-radius: 8px;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-out
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy>.NossosPeriodicos_periodicosAllMobile__7fgX0>.NossosPeriodicos_periodicosDownload__6Y71E>.NossosPeriodicos_card___GxOK:hover {
+    transform: scale(1.02)
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy>.NossosPeriodicos_periodicosAllMobile__7fgX0>.NossosPeriodicos_periodicosDownload__6Y71E>.NossosPeriodicos_card___GxOK p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy>.NossosPeriodicos_periodicosAllMobile__7fgX0>.NossosPeriodicos_periodicosDownload__6Y71E>.NossosPeriodicos_card___GxOK p svg {
+    font-size: 20px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_right__sg_lH {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-content: center;
+    grid-gap: 20px;
+    gap: 20px
+}
+
+
+
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_right__sg_lH .NossosPeriodicos_sam__fvuJT,.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_right__sg_lH .NossosPeriodicos_slc__273z7 {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_right__sg_lH .NossosPeriodicos_sam__fvuJT img,.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_right__sg_lH .NossosPeriodicos_slc__273z7 img {
+    height: auto;
+    max-width: 100%
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_right__sg_lH .NossosPeriodicos_sam__fvuJT span,.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_right__sg_lH .NossosPeriodicos_slc__273z7 span {
+    display: block;
+    text-align: center;
+    padding-block:15px;width: 65%
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_right__sg_lH .NossosPeriodicos_slc__273z7>span>strong {
+    color: #26b0ef
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_right__sg_lH .NossosPeriodicos_sam__fvuJT>span>strong {
+    color: #fc943f
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicosAllDesktop__PiGiu {
+    width: 100%
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicosAllDesktop__PiGiu h3 {
+    color: #032752;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicosAllDesktop__PiGiu>.NossosPeriodicos_periodicosDownload__6Y71E {
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    padding: 15px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicosAllDesktop__PiGiu>.NossosPeriodicos_periodicosDownload__6Y71E>.NossosPeriodicos_card___GxOK {
+    background-color: #032752;
+    color: #fff;
+    border-radius: 8px;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-out
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicosAllDesktop__PiGiu>.NossosPeriodicos_periodicosDownload__6Y71E>.NossosPeriodicos_card___GxOK:hover {
+    transform: scale(1.02)
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicosAllDesktop__PiGiu>.NossosPeriodicos_periodicosDownload__6Y71E>.NossosPeriodicos_card___GxOK p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicosAllDesktop__PiGiu>.NossosPeriodicos_periodicosDownload__6Y71E>.NossosPeriodicos_card___GxOK p svg {
+    font-size: 20px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+    margin-block:150px;height: auto;
+    background-color: #032752;
+    border-radius: 16px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_bluredBall__4COSk {
+    position: absolute;
+    height: 60%;
+    width: 20%;
+    top: 0;
+    left: 50%;
+    border-radius: 50%;
+    background-color: #2676ef;
+    filter: blur(7rem)
+}
+
+
+.NossosPeriodicos_imagem__GuPEV {
+
+    background-image: url("../imagens/periodicos-degustacao/imagem-periodico-degustacao-banner-corpo.webp"); /* https://www.sgpsolucoes.com.br/imagens/boletim_licitacoes_132x201.jpg */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 31%;  /* incluído por Eisen  512px*/
+    height: 20%; /* incluído por Eisen 533px; */
+
+    max-width: 100%; /* incluído por Eisen  512px*/
+    
+    position: absolute; /* incluído por Eisen  512px*/
+    bottom: 15%; /* incluído por Eisen  512px*/
+    right: 15%; /* incluído por Eisen  512px*/
+
+    top: 0; /* incluído por Eisen */
+    margin-top: 65%; /* incluído por Eisen */
+
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_imagem__GuPEV>img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 6%
+}
+
+
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka {
+    width: 55%;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    gap: 40px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka div {
+    display: flex;
+    gap: 10px
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka div svg {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 6px;
+    display: inline-block
+}
+
+.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka button {
+    width: 60%
+}
+
+.mensagem-periodico-degustacao-site label a {
+    color: red;
+    text-decoration: none;
+}
+
+@media(min-width: 1008px) {
+    .NossosPeriodicos_errorsPeriodicosMobile__kafVk,.NossosPeriodicos_main__Bz_iv .NossosPeriodicos_pageSize__MLBde .NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_periodicosAllMobile__7fgX0 {
+        display:none
+    }
+}
+
+@media(max-width: 1145px) {
+    .NossosPeriodicos_content__HyHPQ {
+        background-position:50%;
+        min-width: 100vw;
+        height: 356.8px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative
+    }
+
+    .NossosPeriodicos_content__HyHPQ>.NossosPeriodicos_headerContent__DbetY {
+        width: 40%;
+        margin-left: 10%;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy>.NossosPeriodicos_periodicosAllDesktop__PiGiu {
+        display: none
+    }
+}
+
+@media(max-width: 1008px) {
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy {
+        display:grid;
+        grid-template-columns: repeat(1,auto)
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_left__L6_r8 h2 {
+        color: #032752;
+        text-align: center
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_left__L6_r8 .NossosPeriodicos_dropdowns__Ys4TN {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_left__L6_r8 .NossosPeriodicos_dropdowns__Ys4TN>.NossosPeriodicos_individual__dw5hE span {
+        text-align: right;
+        width: 20%
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_left__L6_r8 .NossosPeriodicos_button__PQiiP {
+        justify-content: center
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_periodicosAllMobile__7fgX0>.NossosPeriodicos_periodicosDownload__6Y71E {
+        display: grid;
+        grid-template-columns: repeat(2,50%)
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicosAllDesktop__PiGiu {
+        display: none
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_imagem__GuPEV>img {
+        bottom: 0;
+        right: 0
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka {
+        width: 65%
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka button {
+        width: 70%
+    }
+
+    .NossosPeriodicos_errorsPeriodicosDesktop__g31wa {
+        display: none
+    }
+}
+
+@media(max-width: 944px) {
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        padding:50px 0 30px
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_imagem__GuPEV>img {
+        bottom: 0;
+        right: 0
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka {
+        width: 75%
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka button {
+        width: 50%
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka div {
+        width: 75%
+    }
+}
+
+@media(max-width: 861px) {
+    .NossosPeriodicos_main__Bz_iv .NossosPeriodicos_content__HyHPQ {
+        background-position:50%;
+        min-width: 100vw;
+        height: 356.8px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative
+    }
+
+    .NossosPeriodicos_main__Bz_iv .NossosPeriodicos_content__HyHPQ>.NossosPeriodicos_headerContent__DbetY {
+        width: 60%
+    }
+
+    .NossosPeriodicos_main__Bz_iv .NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        grid-template-columns: repeat(1,100%)
+    }
+
+    .NossosPeriodicos_main__Bz_iv .NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_bluredBall__4COSk {
+        position: absolute;
+        height: 60%;
+        width: 20%;
+        top: 0;
+        left: 50%;
+        border-radius: 50%;
+        background-color: #2676ef;
+        filter: blur(7rem)
+    }
+
+    .NossosPeriodicos_main__Bz_iv .NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_imagem__GuPEV {
+        display: none
+    }
+
+    .NossosPeriodicos_main__Bz_iv .NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        justify-content: center;
+        color: #fff;
+        gap: 40px;
+        align-items: center;
+        text-align: center
+    }
+
+    .NossosPeriodicos_main__Bz_iv .NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka button {
+        width: 60%
+    }
+}
+
+@media(max-width: 700px) {
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy {
+        display:grid;
+        grid-template-columns: repeat(1,auto)
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_right__sg_lH {
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        justify-content: center;
+        grid-gap: 20px;
+        gap: 20px
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_periodicosAllMobile__7fgX0>.NossosPeriodicos_periodicosDownload__6Y71E {
+        display: grid;
+        grid-template-columns: repeat(1,100%)
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_periodicos__KPpMy .NossosPeriodicos_periodicosAllMobile__7fgX0>.NossosPeriodicos_periodicosDownload__6Y71E>.NossosPeriodicos_card___GxOK {
+        border-radius: 8px;
+        width: 100%;
+        height: 70px;
+        text-decoration: none
+    }
+}
+
+@media(max-width: 625px) {
+    .NossosPeriodicos_main__Bz_iv .NossosPeriodicos_content__HyHPQ {
+        background-position:50%;
+        min-width: 100vw;
+        height: 356.8px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative
+    }
+
+    .NossosPeriodicos_main__Bz_iv .NossosPeriodicos_content__HyHPQ>.NossosPeriodicos_headerContent__DbetY {
+        width: 80%;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_imagem__GuPEV>img {
+        bottom: 0;
+        right: 0
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka,.NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka button {
+        width: 100%
+    }
+
+    .NossosPeriodicos_main__Bz_iv>.NossosPeriodicos_pageSize__MLBde>.NossosPeriodicos_principaisSolucoesInovadoras__YoQv5>.NossosPeriodicos_descricao__qq1ka div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width: 1px) and (max-width: 470px) { 
+
+    
+    .mensagem-periodico-degustacao-site label {
+        color: red !important;
+        font-size: 80% !important;
+        padding: 1% 1% 1% 3%;
+        width: 100%;
+        border-style: solid !important;
+        margin-top: 35%;
+        border-width: 0px 0px 0px 2px;
+        text-decoration: none;
+    }
+
+    .mensagem-periodico-degustacao-site label a {
+        text-decoration: none;
+    }
+
+    .NossosPeriodicos_content__HyHPQ {
+        background-position: 50%;
+        min-width: 100vw;
+        height: 356.8px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    .NossosPeriodicos_content__HyHPQ {
+        background-image: url("../imagens/periodicos-degustacao/imagem-periodico-degustacao-banner-cabecalho.webp");
+    }
+
+    .NossosPeriodicos_content__HyHPQ .NossosPeriodicos_bluredBall__4COSk {
+        position: absolute;
+        height: 60%;
+        width: 20%;
+        top: 0;
+        left: 25%;
+        border-radius: 50%;
+        z-index: 0;
+        background-color: #2676ef;
+        filter: blur(7rem);
+    }
+    
+    .NossosPeriodicos_content__HyHPQ>.NossosPeriodicos_headerContent__DbetY {
+        width: 40%;
+        margin-left: 10%;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+    }
+
+
+
+    .NossosPeriodicos_content__HyHPQ>.NossosPeriodicos_headerContent__DbetY>h1 {
+        color: #fff;
+    }
+
+    .NossosPeriodicos_headerContent__DbetY h1 {
+        font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace;
+        font-weight: 700;
+        font-size: 190%;
+        margin-bottom: 0;
+    }
+
+    .NossosPeriodicos_headerContent__DbetY hr {
+        width: 15%;
+        height: 3px;
+        background-color: #26b0ef;
+        border: 1px solid #26b0ef;
+        margin: 0% 0% 0% 0%;
+    }
+
+
+    .NossosPeriodicos_content__HyHPQ>.NossosPeriodicos_headerContent__DbetY>p {
+        color: #fff;
+        margin-block: 5px;
+    }
+
+    .NossosPeriodicos_headerContent__DbetY p {
+        font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace;
+    }
+
+
+
+    .NossosPeriodicos_pageSize__MLBde {
+        /* width: 100%; */
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .NossosPeriodicos_left__L6_r8 h2 {
+        color: #032752;
+        padding-bottom: 17%;
+        font-size: 150%;
+        font-weight: 700;
+    }
+    
+    .NossosPeriodicos_periodicos__KPpMy {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 5%;
+        gap: 40px;
+    }
+
+    .NossosPeriodicos_dropdowns__Ys4TN {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .NossosPeriodicos_individual__dw5hE {
+        display: flex;
+        align-items: center;
+        gap: 12%;
+    }
+    
+    .NossosPeriodicos_individual__dw5hE label {
+        width: 59%;
+    }
+    
+    .periodico-degustacao-select {
+        appearance: none !important;
+        background-color: #ffffff !important;
+        color: #384cf8 !important;
+    }
+    
+    .NossosPeriodicos_individual__dw5hE {
+        display: flex;
+        align-items: center;
+        gap: 12%;
+    }
+    
+    .NossosPeriodicos_individual__dw5hE label {
+        width: 59%;
+    }
+    
+    .periodico-degustacao-select {
+        appearance: none !important;
+        background-color: #ffffff !important;
+        color: #384cf8 !important;
+    }
+
+    .NossosPeriodicos_individual__dw5hE {
+        display: flex;
+        align-items: center;
+        gap: 12%;
+    }
+
+    .NossosPeriodicos_individual__dw5hE label {
+        width: 59%;
+    }
+
+    .periodico-degustacao-select {
+        appearance: none !important;
+        background-color: #ffffff !important;
+        color: #384cf8 !important;
+    }
+
+    .NossosPeriodicos_button__PQiiP {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        padding-block: 10%;
+        font-weight: 700;
+        font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace;
+    }
+
+    .NossosPeriodicos_right__sg_lH {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        grid-gap: 4%;
+        gap: 4%;
+    }
+
+    #NossosPeriodicos_slc__273z7 {
+        background-image: url("../imagens/periodicos-degustacao/imagem-periodico-degustacao-slc.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 292px;
+        border-radius: 2% 2% 2% 2%;
+        transition: .5s;
+        margin-bottom: 20%;
+    }
+
+    .NossosPeriodicos_slc__273z7 span {
+        display: block;
+        text-align: center;
+        padding-block: 105%;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .NossosPeriodicos_sam__fvuJT {
+        background-image: url("../imagens/periodicos-degustacao/imagem-periodico-degustacao-sam.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 292px;
+        border-radius: 2% 2% 2% 2%;
+        transition: .5s;
+        margin-bottom: 20%;
+    }
+
+    .NossosPeriodicos_sam__fvuJT span {
+        display: block;
+        text-align: center;
+        padding-block: 104%;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        margin-block: 25%;
+        height: auto;
+        background-color: #032752;
+        border-radius: 16px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        justify-content: space-between;
+    }
+
+    .NossosPeriodicos_bluredBall__4COSk {
+        position: absolute;
+        height: 60%;
+        width: 20%;
+        top: 0;
+        left: 0%;
+        border-radius: 0%;
+        background-color: #2676ef;
+        filter: blur(7rem);
+    }
+
+    .NossosPeriodicos_descricao__qq1ka {
+        width: 100%;
+        padding: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        gap: 40px;
+    }
+
+    .NossosPeriodicos_descricao__qq1ka h1 {
+        font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace;
+        font-weight: 700;
+        font-size: 150%;
+    }
+
+    .NossosPeriodicos_descricao__qq1ka button {
+        width:100%;
+    }
+
+    .Button_button__OFOdO {
+        padding: 10px 30px;
+        font-family: IBM Plex Sans,sans-serif,Courier New,Courier,monospace;
+        font-size: 95%;
+        box-sizing: border-box;
+        font-weight: 700;
+        border-radius: 4px;
+        border: none;
+        /*width: auto;*/
+        /*cursor: pointer;*/
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+
+    .NossosPeriodicos_descricao__qq1ka div {
+        display: flex;
+        gap: 10px;
+    }
+
+    .NossosPeriodicos_descricao__qq1ka svg {
+        border: 1px solid #fff;
+        border-radius: 5px;
+        min-width: 30px;
+        min-height: 30px;
+        padding: 6px;
+        display: inline-block;
+    }
+
+    .NossosPeriodicos_imagem__GuPEV {
+        background-image: url("../imagens/periodicos-degustacao/imagem-periodico-degustacao-banner-corpo.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 31%;
+        height: 20%;
+        max-width: 100%;
+        position: absolute;
+        bottom: 15%;
+        right: 15%;
+        top: 0;
+        margin-top: 65%;
+        display: none;
+    }
+
+
+
+    
+    
+    
+    
+
+}
+
+@media screen and (min-width: 471px) and (max-width: 600px) { 
+
+    .NossosPeriodicos_right__sg_lH {
+        display: grid;
+        grid-template-columns: repeat(1,100%); 
+        justify-content: center;
+        grid-gap: 4%;
+        gap: 15%;
+        /* width: 50%; */
+    }
+
+
+    .NossosPeriodicos_individual__dw5hE {
+
+        width: 30%;
+    }
+
+    .NossosPeriodicos_button__PQiiP {
+        width: 100%;
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .mensagem-periodico-degustacao-site label {
+        
+        color: red !important;
+        text-decoration: none;
+
+    }
+
+    .mensagem-periodico-degustacao-site label a {
+        
+        color: red !important;
+        text-decoration: none;
+
+    }
+
+    .NossosPeriodicos_descricao__qq1ka {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        margin-block: 150px; /* 15% */
+    }
+
+    .mensagem-periodico-degustacao-site {
+        padding-top: 220px;
+        height: 157px;
+    }
+
+    .NossosPeriodicos_slc__273z7 span {
+
+        padding-block: 312px; /* 90% */
+
+    }
+
+    .NossosPeriodicos_sam__fvuJT span {
+        padding-block: 312px;
+    }
+
+    .periodico-degustacao-select {
+
+        width: 100px !important;
+    }
+
+
+
+    .NossosPeriodicos_left__L6_r8 {
+        text-align: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .NossosPeriodicos_left__L6_r8 h2 {
+        padding-bottom: 7%;
+        width: 100% !important;
+    }
+
+    .NossosPeriodicos_imagem__GuPEV {
+        display: none;
+    }
+
+
+    .NossosPeriodicos_periodicos__KPpMy {
+        grid-template-columns: 100%;
+    }
+
+    .NossosPeriodicos_dropdowns__Ys4TN {
+        padding: 0% 5% 0% 5%;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+ 
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 850px) {
+
+   
+    .NossosPeriodicos_right__sg_lH {
+        display: grid;
+        grid-template-columns: repeat(2,50%); 
+        justify-content: center;
+        grid-gap: 4%;
+        gap: 5%;
+        /* width: 50%; */
+    }
+
+
+    .NossosPeriodicos_individual__dw5hE {
+
+        width: 30%;
+    }
+
+    .NossosPeriodicos_button__PQiiP {
+        width: 100%;
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .mensagem-periodico-degustacao-site label {
+        
+        color: red !important;
+
+    }
+
+    .NossosPeriodicos_descricao__qq1ka {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        margin-block: 150px; /* 15% */
+    }
+
+    .mensagem-periodico-degustacao-site {
+        padding-top: 170px;
+        height: 157px;
+    }
+
+    .NossosPeriodicos_slc__273z7 span {
+
+        padding-block: 312px; /* 90% */
+
+    }
+
+    .NossosPeriodicos_sam__fvuJT span {
+        padding-block: 312px;
+    }
+
+    .periodico-degustacao-select {
+
+        width: 100px !important;
+    }
+
+
+
+    .NossosPeriodicos_left__L6_r8 {
+        text-align: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .NossosPeriodicos_left__L6_r8 h2 {
+        padding-bottom: 7%;
+        width: 100% !important;
+    }
+
+    .NossosPeriodicos_imagem__GuPEV {
+        display: none;
+    }
+
+
+    .NossosPeriodicos_periodicos__KPpMy {
+        grid-template-columns: 100%;
+    }
+
+    .NossosPeriodicos_dropdowns__Ys4TN {
+        padding: 0% 5% 0% 5%;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+ 
+    
+}
+
+@media screen and (min-width: 851px) and (max-width: 991px) { 
+
+    .NossosPeriodicos_individual__dw5hE {
+
+        width: 30%;
+    }
+
+    .NossosPeriodicos_button__PQiiP {
+        width: 100%;
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .mensagem-periodico-degustacao-site label {
+        
+        color: red !important;
+
+    }
+
+    .NossosPeriodicos_descricao__qq1ka {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        margin-block: 120px; /* 15% */
+    }
+
+    .mensagem-periodico-degustacao-site {
+        padding-top: 181px;
+        height: 157px;
+    }
+
+    .NossosPeriodicos_slc__273z7 span {
+
+        padding-block: 312px; /* 90% */
+
+    }
+
+    .NossosPeriodicos_sam__fvuJT span {
+        padding-block: 312px;
+    }
+
+    .periodico-degustacao-select {
+
+        width: 100px !important;
+    }
+
+
+
+    .NossosPeriodicos_left__L6_r8 {
+        text-align: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .NossosPeriodicos_left__L6_r8 h2 {
+        padding-bottom: 7%;
+        width: 100% !important;
+    }
+
+    .NossosPeriodicos_imagem__GuPEV {
+        display: none;
+    }
+
+
+    .NossosPeriodicos_periodicos__KPpMy {
+        grid-template-columns: 100%;
+    }
+
+    .NossosPeriodicos_dropdowns__Ys4TN {
+        padding: 0% 5% 0% 5%;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+ 
+
+
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+
+  
+    #NossosPeriodicos_slc__273z7 {
+        height: 248px;
+    }
+
+    .NossosPeriodicos_sam__fvuJT { 
+        height: 248px;
+    }
+
+    .NossosPeriodicos_slc__273z7 span {
+
+        padding-block: 266px; /* 82% */
+
+    }
+
+    .NossosPeriodicos_sam__fvuJT span {
+
+        padding-block: 266px; /* 82% */
+
+    }
+
+    .mensagem-periodico-degustacao-site {
+        padding-top: 35px;
+        height: 157px;
+    }
+
+    .mensagem-periodico-degustacao-site label {
+        
+
+        color: red !important;
+        font-size: 80% !important;
+        padding: 1% 1% 1% 3%;
+        width: 100%;
+        border-style: solid !important;
+        margin-top: 8%;
+        border-width: 0px 0px 0px 2px;
+    }
+
+    .mensagem-periodico-degustacao-site label a {
+        text-decoration: none;
+    }
+
+    .NossosPeriodicos_imagem__GuPEV {
+        width: 467px;
+        margin-top: 987px;
+        right: 12%; /* 15% */
+    }
+
+    .NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        margin-block: 129px;
+        height: 428px; /* auto */
+        background-color: #032752;
+        border-radius: 16px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        justify-content: space-between;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1095px) {
+
+    #NossosPeriodicos_slc__273z7 {
+        height: 248px;
+    }
+
+    .NossosPeriodicos_sam__fvuJT { 
+        height: 248px;
+    }
+
+    .NossosPeriodicos_slc__273z7 span {
+
+        padding-block: 266px; /* 82% */
+
+    }
+
+    .NossosPeriodicos_sam__fvuJT span {
+
+        padding-block: 266px; /* 82% */
+
+    }
+
+    .mensagem-periodico-degustacao-site {
+        padding-top: 35px;
+        height: 157px;
+    }
+
+    .mensagem-periodico-degustacao-site label {
+        
+
+        color: red !important;
+        font-size: 80% !important;
+        padding: 1% 1% 1% 3%;
+        width: 100%;
+        border-style: solid !important;
+        margin-top: 8%;
+        border-width: 0px 0px 0px 2px;
+    }
+
+    .mensagem-periodico-degustacao-site label a {
+        text-decoration: none;
+    }
+
+    .NossosPeriodicos_imagem__GuPEV {
+        width: 467px;
+        margin-top: 989px;
+    }
+
+    .NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        margin-block: 129px;
+        height: 428px; /* auto */
+        background-color: #032752;
+        border-radius: 16px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        justify-content: space-between;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1096px) and (max-width: 1199px) {
+
+    #NossosPeriodicos_slc__273z7 {
+        height: 248px;
+    }
+
+    .NossosPeriodicos_sam__fvuJT { 
+        height: 248px;
+    }
+
+    .NossosPeriodicos_slc__273z7 span {
+
+        padding-block: 266px; /* 82% */
+
+    }
+
+    .NossosPeriodicos_sam__fvuJT span {
+
+        padding-block: 266px; /* 82% */
+
+    }
+
+    .mensagem-periodico-degustacao-site {
+        height: 157px;
+    }
+
+    .mensagem-periodico-degustacao-site label {
+        
+
+        color: red !important;
+        font-size: 80% !important;
+        padding: 1% 1% 1% 3%;
+        width: 100%;
+        border-style: solid !important;
+        margin-top: 8%;
+        border-width: 0px 0px 0px 2px;
+    }
+
+    .mensagem-periodico-degustacao-site label a {
+        text-decoration: none;
+    }
+
+    .NossosPeriodicos_imagem__GuPEV {
+        width: 443px;
+        margin-top: 997px; /* 91% */
+    }
+
+    .NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        margin-block: 129px;
+        height: auto;
+        background-color: #032752;
+        border-radius: 16px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        justify-content: space-between;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1245px) {
+
+    .NossosPeriodicos_slc__273z7 span {
+        display: block;
+        text-align: center;
+        padding-block: 90%;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .NossosPeriodicos_sam__fvuJT span {
+        display: block;
+        text-align: center;
+        padding-block: 90%;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .mensagem-periodico-degustacao-site {
+        height: 157px;
+    }
+
+    .mensagem-periodico-degustacao-site label {
+        
+
+        color: red !important;
+        font-size: 80% !important;
+        padding: 1% 1% 1% 3%;
+        width: 100%;
+        border-style: solid !important;
+        margin-top: 8%;
+        border-width: 0px 0px 0px 2px;
+
+        
+    }
+
+    .mensagem-periodico-degustacao-site label a {
+        text-decoration: none;
+    }
+
+    .NossosPeriodicos_imagem__GuPEV {
+        background-image: url("../imagens/periodicos-degustacao/imagem-periodico-degustacao-banner-corpo.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 412px;
+        height: 428px;
+        max-width: 100%;
+        position: absolute;
+        bottom: 15%;
+        right: 15%;
+        top: 0;
+        margin-top: 81%;
+    }
+
+    .NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        margin-block: 80px;
+        height: auto;
+        background-color: #032752;
+        border-radius: 16px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        justify-content: space-between;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1246px) and (max-width: 1399px) { 
+
+    .mensagem-periodico-degustacao-site {
+        height: 157px;
+    }
+
+    .mensagem-periodico-degustacao-site label {
+        
+
+        color: red !important;
+        font-size: 80% !important;
+        padding: 1% 1% 1% 3%;
+        width: 100%;
+        border-style: solid !important;
+        margin-top: 8%;
+        border-width: 0px 0px 0px 2px;
+
+        
+    }
+
+    .mensagem-periodico-degustacao-site label a {
+        text-decoration: none;
+    }
+
+    .NossosPeriodicos_imagem__GuPEV {
+        background-image: url("../imagens/periodicos-degustacao/imagem-periodico-degustacao-banner-corpo.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 412px;
+        height: 428px;
+        max-width: 100%;
+        position: absolute;
+        bottom: 15%;
+        right: 15%;
+        top: 0;
+        margin-top: 70%;
+    }
+
+    .NossosPeriodicos_principaisSolucoesInovadoras__YoQv5 {
+        margin-block: 80px;
+        height: auto;
+        background-color: #032752;
+        border-radius: 16px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        justify-content: space-between;
+    }
+
+}
